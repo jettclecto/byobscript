@@ -11,7 +11,7 @@
 // @grant           GM_setValue
 // @grant           GM_log
 // @copyright		2014+, Jett
-// @updateURL       https://gist.github.com/eclecto/9663576/raw/byob.user.js
+// @updateURL       https://github.com/jettclecto/byobscript/raw/master/byob.user.js
 // ==/UserScript==
 
 // TODO: Post truncation
