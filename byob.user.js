@@ -59,7 +59,7 @@
         new Banner('http://i.imgur.com/hNkQlDD.png', 'Salmiakki'),
         new Banner('http://i.imgur.com/uoVe6oV.gif', 'cute anime girl'),
         new Banner('http://i.imgur.com/Vj85qWs.jpg', 'Afro Doug'),
-        new Banner('http://woozle.org/t/bcoffeesm.png', 'cruft'),
+        new Banner('http://i.imgur.com/WepG4IK.png', 'cruft'),
         new Banner('http://i.imgur.com/3rc7qzA.png', 'cute anime girl'),
         new Banner('http://i.imgur.com/YJMQRVh.png', 'what the...'),
         new Banner('http://i.imgur.com/gLnO4yZ.jpg', 'Bo-Pepper'),
