@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name			BYOB: the Script
-// @version			27.3
+// @version			27.4
 // @description		Does a bunch of stuff to BYOB
 // @include			http://forums.somethingawful.com/*.php*
 // @include			http://forums.somethingawful.com/
@@ -314,26 +314,6 @@
         
         GM_config.init(gminit);
         
-        // Hide NWS banners if needed
-        
-        /*if(!GM_config.get('bannernws')) {
-            var nwsinit = {
-                'id': 'GM_config',
-                'fields': {}
-            };
-            for (var i=0; i < banners.length; i++) {
-                var ban = banners[i];
-                if(ban.nws) {
-                    console.log('nws banner');
-                    nwsinit.fields[ban.url] = {
-                        'type': 'hidden',
-                        'value': false,
-                    };
-                }
-            }
-            GM_config.init(nwsinit);
-        }*/
-        
         // Update stuff
         if(typeof GM_config.get('byobanner') != 'boolean') {
             GM_config.set('byobanner', true);
@@ -494,21 +474,16 @@
             
             if(GM_config.get('ikon')) {
                 styles.append('#thread dl.userinfo dt.special-poster { padding-left:20px; background-repeat:no-repeat; }');
-                //$('.post .author:contains("dogcrash truther")').addClass('special-poster').css('background-image','url(http://i.imgur.com/OKTX3rc.png)'); // DCT
-                //$('.post .author:contains("Arnold of Soissons")').addClass('special-poster').css('background-image','url(http://i.imgur.com/6bWLbxS.png)'); // Arnie
                 $('.post .author:contains("Iggy Koopa")').addClass('special-poster').css('background-image','url(http://i.imgur.com/7jDhA6A.png)'); // Sid
                 $('.post .author:contains("Jett")').addClass('special-poster').css('background-image','url(http://i.imgur.com/JN85xeP.png)'); // Jett
                 $('.post .author:contains("Machai")').addClass('role-ik').css('background-image','url(http://fi.somethingawful.com/star_ik_beecock_alert.gif)'); // Machai (Ralp)
                 $('.post .author:contains("my new dog")').addClass('special-poster').css('background-image','url(http://i.imgur.com/lCPZE53.gif)'); // my new dog
                 $('.post .author:contains("Salmiakki")').addClass('special-poster').css('background-image','url(http://i.imgur.com/9ofmlIh.png)'); // Salmiakki
                 $('.post .author:contains("Captain No-mates")').addClass('special-poster').css('background-image','url(http://i.imgur.com/ROfVMtN.png)'); // No-mates
-                $('.post .author:contains("WindmillSlayer")').addClass('special-poster').css('background-image','url(http://i.imgur.com/WTRNH7U.gif)'); // WMS
                 $('.post .author:contains("Bureaus Watts")').addClass('special-poster').css('background-image','url(http://i.imgur.com/dTxpObH.png)'); // bwatts
                 $('.post .author:contains("Don We Now")').addClass('special-poster').css('background-image','url(http://i.imgur.com/OIpuah8.gif)'); // Don We Now
                 $('.post .author:contains("i am he")').addClass('special-poster').css('background-image','url(http://i.imgur.com/cGZhUXk.png)'); // i am he
                 $('.post .author:contains("wwry")').addClass('special-poster').css({'background-image':'url(http://fi.somethingawful.com/safs/smilies/5/0/evilbuddy.001.gif)','padding-left':'48px','height':'25px'}); // wwry
-                
-                $('.userinfo .author:contains("Machai"), .lastpost .author:contains("Machai"), td.author a:contains("Machai")').text('Ralp');
             }
             
             if(GM_config.get('nonades')) {
