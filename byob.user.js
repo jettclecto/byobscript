@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name			BYOB: the Script
-// @version			27.4
+// @version			27.5
 // @description		Does a bunch of stuff to BYOB
 // @include			http://forums.somethingawful.com/*.php*
 // @include			http://forums.somethingawful.com/
@@ -37,10 +37,8 @@
         new Banner('http://i.imgur.com/dcp74hv.png', 'collaborative effort'),
         new Banner('http://i.imgur.com/AVG86Dv.gif', 'K. Flaps'),
         new Banner('http://i.imgur.com/vNQ7sl4.png', 'The Green Calx'),
-        new Banner('http://i.imgur.com/ZFUbhpK.gif', 'K. Flaps'),
         new Banner('http://i.minus.com/igGxVbfrs4fMx.gif', 'Wesley Snipes'),
         new Banner('http://i.imgur.com/0BSIQht.gif', 'K. Flaps'),
-        new Banner('http://i.imgur.com/hoghENJ.png', 'Arnold of Soissons'),
         new Banner('http://i.imgur.com/wXj5XcR.gif', 'The Fresh Prince'),
         new Banner('http://i.imgur.com/VjYcrZB.png', 'Tipps'),
         new Banner('http://i.imgur.com/xf0CT1i.jpg', 'Finn Pennywhistle'),
