@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name			BYOB: the Script
-// @version			27.5
+// @version			27.6
 // @description		Does a bunch of stuff to BYOB
 // @include			http://forums.somethingawful.com/*.php*
 // @include			http://forums.somethingawful.com/
@@ -345,8 +345,7 @@
                 }
                 //console.log(banners.length);
                 var banner = banners[Math.floor(banners.length * Math.random())];
-                $('#navigation').after('<img class="byobanner" src="'+banner.url+'" title="'+banner.title+'" style="margin:25px auto; display:block; max-width:100%" />');
-                $(window).resize(function() {$('.byobanner').css('max-height',($(window).height()/3)+'px');}).resize();
+                $('#navigation').after('<img class="byobanner" src="'+banner.url+'" title="'+banner.title+'" style="margin:25px auto; display:block; max-width:100%; max-height:25vh;" />');
             }
             
             
